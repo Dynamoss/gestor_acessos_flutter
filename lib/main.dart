@@ -1,17 +1,21 @@
+import 'package:ApplicationName/appModule.dart';
 import 'package:flutter/material.dart';
-import 'pages/telainicialscreen1/telainicialscreen1.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ModularApp(module: AppModule(), child: AppWidget()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+class AppWidget extends StatelessWidget {
+  const AppWidget({Key key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        title: 'ApplicationName', home: Telainicialscreen1());
+    return MaterialApp.router(
+      title: 'Gestor de Acessos',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      routeInformationParser: Modular.routeInformationParser,
+      routerDelegate: Modular.routerDelegate,
+    ); //added by extension
   }
 }

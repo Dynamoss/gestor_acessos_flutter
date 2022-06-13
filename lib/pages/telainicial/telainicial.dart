@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import '../../ui/export.dart';
 
-class Telainicialscreen1 extends StatefulWidget {
-  const Telainicialscreen1({Key key}) : super(key: key);
+class Telainicial extends StatefulWidget {
+  const Telainicial({Key key}) : super(key: key);
 
   @override
-  _Telainicialscreen1State createState() => _Telainicialscreen1State();
+  _TelainicialState createState() => _TelainicialState();
 }
 
-class _Telainicialscreen1State extends State<Telainicialscreen1> {
+class _TelainicialState extends State<Telainicial> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width * 0.09;
@@ -22,7 +23,7 @@ class _Telainicialscreen1State extends State<Telainicialscreen1> {
             children: [
               // This was created due the empty containers in the Figma Input
               Padding(
-                padding: const EdgeInsets.only(top: 30.0),
+                padding: const EdgeInsets.only(top: 50.0),
                 child: Stack(
                   children: [
                     Padding(
@@ -131,7 +132,7 @@ class _Telainicialscreen1State extends State<Telainicialscreen1> {
                           size: 50,
                         ),
                         color: Colors.white,
-                        onPressed: () {},
+                        onPressed: () => Modular.to.navigate('/login'),
                       ),
                     ),
                   ),

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import '../../ui/export.dart';
-
-
 
 class Teladeloginscreen3 extends StatefulWidget {
   const Teladeloginscreen3({Key key}) : super(key: key);
 
   @override
-  _Teladeloginscreen3State createState() => _Teladeloginscreen3State();}
+  _Teladeloginscreen3State createState() => _Teladeloginscreen3State();
+}
 
 class _Teladeloginscreen3State extends State<Teladeloginscreen3> {
   @override
@@ -15,218 +15,229 @@ class _Teladeloginscreen3State extends State<Teladeloginscreen3> {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: FvColors.screen1Backgroundscreen2Backgroundscreen3Backgroundscreen4Backgroundscreen5Background,
-      body: 
-      SingleChildScrollView(
-        child:
-      Column(
-            children: [
-    // This was created due the empty containers in the Figma Input
-    Container(),
-  Padding(
-    padding: const EdgeInsets.only(left: 54, top: 1243),
-    child: SizedBox(
-      height: 181,
-      width: 187,
-      child: Image.asset("assets/Ellipse_ImageView_27-187x181.png"),
-    ),
-  ),
-    // This was created due the empty containers in the Figma Input
-    Container(),
-  Padding(
-    padding: const EdgeInsets.only(left: 199, top: 24),
-    child: SizedBox(
-      height: 25,
-      width: 25,
-      child: Image.asset("assets/baselineaddaphotowhite_ImageView_29-25x25.png"),
-    ),
-  ),
-  const Padding(
-    padding: const EdgeInsets.only(left: 285, top: 35),
-  child: 
-        Text(
-          "Olá, Igor",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 35,
-          color: FvColors.screen1Backgroundscreen2Backgroundscreen3Backgroundscreen4Backgroundscreen5Background,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  const Padding(
-    padding: const EdgeInsets.only(left: 257, top: 252),
-  child: 
-        Text(
-          "Permissões",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 35,
-          color: FvColors.screen1Backgroundscreen2Backgroundscreen3Backgroundscreen4Backgroundscreen5Background,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  Padding(
-    padding: const EdgeInsets.only(left: 475, top: 43),
-    child: 
-    SizedBox(
-      height: 155,
-      width: 209,
-    child: TextButton(
-      child: const Text("Rectangle_Button_31",
-      style: TextStyle(
-        fontSize: 14,
-      )),
-      style: TextButton.styleFrom(
-      ),
-      onPressed: () {
-        },
-      ),
-    ),
-  ),
-  Padding(
-    padding: const EdgeInsets.only(left: 255, top: 140),
-    child: 
-    SizedBox(
-      height: 155,
-      width: 209,
-    child: TextButton(
-      child: const Text("Rectangle_Button_33",
-      style: TextStyle(
-        fontSize: 14,
-      )),
-      style: TextButton.styleFrom(
-      ),
-      onPressed: () {
-        },
-      ),
-    ),
-  ),
-  Padding(
-    padding: const EdgeInsets.only(left: 29, top: 137),
-    child: 
-    SizedBox(
-      height: 155,
-      width: 209,
-    child: TextButton(
-      child: const Text("Rectangle_Button_32",
-      style: TextStyle(
-        fontSize: 14,
-      )),
-      style: TextButton.styleFrom(
-      ),
-      onPressed: () {
-        },
-      ),
-    ),
-  ),
-  const Padding(
-    padding: const EdgeInsets.only(left: 503, top: 102),
-  child: 
-        Text(
-          "Encerradas",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 30,
-          color: FvColors.button23FontColor,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  const Padding(
-    padding: const EdgeInsets.only(left: 54, top: 29),
-  child: 
-        Text(
-          "Solicitadas",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 30,
-          color: FvColors.button23FontColor,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  const Padding(
-    padding: const EdgeInsets.only(left: 291, top: 29),
-  child: 
-        Text(
-          "Liberadas",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 30,
-          color: FvColors.button23FontColor,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  const Padding(
-    padding: const EdgeInsets.only(left: 338, top: 22),
-  child: 
-        Text(
-          "28",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 35,
-          color: FvColors.textview34FontColor,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  const Padding(
-    padding: const EdgeInsets.only(left: 564, top: 36),
-  child: 
-        Text(
-          "32",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 35,
-          color: FvColors.button23FontColor,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  const Padding(
-    padding: const EdgeInsets.only(left: 112, top: 36),
-  child: 
-        Text(
-          "30",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 35,
-          color: FvColors.button23FontColor,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
-  Padding(
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // This was created due the empty containers in the Figma Input
 
-    padding: const EdgeInsets.only(left: 523, top: 499),
-    child: Container(
-      height: 156,
-      width: 151,
-      child:
-        GestureDetector(
-          onTap: () {
-        },
-        child: Image.asset("assets/Ellipse_ImageButton_40-151x156.png"),
-      ),
-    ),
-  ),
-  Padding(
-    padding: const EdgeInsets.only(left: 559, top: 103),
-    child: SizedBox(
-      height: 80,
-      width: 80,
-      child: Image.asset("assets/baselineaddwhitedp_ImageView_41-80x80.png"),
-    ),
-  ),
-  const Padding(
-    padding: const EdgeInsets.only(left: 54, top: 60),
-  child: 
-        Text(
-          "Criar uma nova solicitação",
-              textAlign: TextAlign.left,
-          style: TextStyle(
-          fontSize: 35,
-          color: FvColors.screen1Backgroundscreen2Backgroundscreen3Backgroundscreen4Backgroundscreen5Background,
-          fontWeight: FontWeight.w400,
-      ),
-    )),
+            Padding(
+              padding: const EdgeInsets.only(top: 40.0),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 40, top: 30),
+                    child: Container(
+                      // color: Colors.grey,
+                      width: 100.0,
+                      height: 100.0,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage("assets/imagem_app.jpeg"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Padding(
+                    padding: const EdgeInsets.only(left: 30, top: 35),
+                    child: Text(
+                      "Olá, Igor",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontWeight: FontWeight.w400,
+                          fontFamily: 'Secular'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            // This was created due the empty containers in the Figma Input
+
+            const Center(
+              child: Padding(
+                  padding: EdgeInsets.only(left: 40, top: 60),
+                  child: Text(
+                    "Permissões",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w400,
+                        fontFamily: 'Secular'),
+                  )),
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 20, top: 43),
+                  child: Card(
+                    color: const Color(
+                      0xff4A3333,
+                    ),
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(22)),
+                    ),
+                    child: InkWell(
+                      splashColor: Colors.blue.withAlpha(30),
+                      onTap: () => Modular.to.navigate('/solicitadasList'),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 20.0),
+                        child: SizedBox(
+                          width: 110,
+                          height: 60,
+                          child: Column(
+                            children: const [
+                              Text(
+                                'Solicitadas',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color.fromARGB(170, 255, 255, 255),
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: 'Secular'),
+                              ),
+                              Text(
+                                '30',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: 'Secular'),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 5, top: 43),
+                  child: Card(
+                    color: const Color(0xffE1473F),
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(22)),
+                    ),
+                    child: InkWell(
+                      splashColor: Colors.blue.withAlpha(30),
+                      onTap: () => Modular.to.navigate('/recebidasList'),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 20.0),
+                        child: SizedBox(
+                          width: 110,
+                          height: 60,
+                          child: Column(
+                            children: const [
+                              Text(
+                                'Liberadas',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color.fromARGB(170, 255, 255, 255),
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: 'Secular'),
+                              ),
+                              Text(
+                                '28',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: 'Secular'),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 5, top: 43),
+                  child: Card(
+                    color: const Color(
+                      0xff4A3333,
+                    ),
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(22)),
+                    ),
+                    child: InkWell(
+                      splashColor: Colors.blue.withAlpha(30),
+                      onTap: () {
+                        debugPrint('Card tapped.');
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 20.0),
+                        child: SizedBox(
+                          width: 110,
+                          height: 60,
+                          child: Column(
+                            children: const [
+                              Text(
+                                'Encerradas',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color.fromARGB(170, 255, 255, 255),
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: 'Secular'),
+                              ),
+                              Text(
+                                '33',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: 'Secular'),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(left: 20, top: 250.0),
+              child: Row(
+                children: [
+                  const Text(
+                    'Criar uma nova solicitação',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w400,
+                        fontFamily: 'Secular'),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0, top: 10),
+                    child: Ink(
+                      decoration: const ShapeDecoration(
+                        color: Color(0xff4A3333),
+                        shape: CircleBorder(),
+                      ),
+                      child: IconButton(
+                        iconSize: 62,
+                        icon: const Icon(
+                          Icons.add,
+                          size: 40,
+                        ),
+                        color: Colors.white,
+                        onPressed: () => Modular.to.navigate('/solicitar'),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
-    ));
+      ),
+    );
   }
 }
