@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:biometricx/biometricx.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -36,6 +38,11 @@ class _LoginPageState extends State<LoginPage> {
 
       // await messages.add(messageKey);
       // app.showList();
+      sleep(Duration(seconds: 2));
+
+      var url = Uri.parse('http://localhost:3333/CreateUser');
+
+      Modular.to.pushNamed('/home');
       return teste;
     }
 

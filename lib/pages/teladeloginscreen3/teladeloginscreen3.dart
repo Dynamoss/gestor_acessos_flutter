@@ -84,7 +84,7 @@ class _Teladeloginscreen3State extends State<Teladeloginscreen3> {
                     ),
                     child: InkWell(
                       splashColor: Colors.blue.withAlpha(30),
-                      onTap: () => Modular.to.navigate('/solicitadasList'),
+                      onTap: () => Modular.to.pushNamed('/solicitadasList'),
                       child: Padding(
                         padding: const EdgeInsets.only(top: 20.0),
                         child: SizedBox(
@@ -124,7 +124,7 @@ class _Teladeloginscreen3State extends State<Teladeloginscreen3> {
                     ),
                     child: InkWell(
                       splashColor: Colors.blue.withAlpha(30),
-                      onTap: () => Modular.to.navigate('/recebidasList'),
+                      onTap: () => Modular.to.pushNamed('/recebidasList'),
                       child: Padding(
                         padding: const EdgeInsets.only(top: 20.0),
                         child: SizedBox(
@@ -228,7 +228,7 @@ class _Teladeloginscreen3State extends State<Teladeloginscreen3> {
                           size: 40,
                         ),
                         color: Colors.white,
-                        onPressed: () => Modular.to.navigate('/solicitar'),
+                        onPressed: () => Modular.to.pushNamed('/solicitar'),
                       ),
                     ),
                   ),
